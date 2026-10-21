@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com data:; img-src 'self' data:; connect-src 'self'; form-action 'none'; upgrade-insecure-requests" />
+  <title>Ton Pote L'Informaticien</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">💻 Ton Pote L'Informaticien</div>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span class="burger"></span>
+    </button>
+    <nav class="nav" id="main-nav">
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#work">Cours</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECTION ACCUEIL -->
+    <section id="home" class="panel"> 
+      <div class="container">
+        <h1>👋 Bonjour, je suis <span style="color: var(--accent);">Ton Pote L'Informaticien</span></h1>
+        <p style="font-size: 1.2rem; max-width: 600px; color: var(--muted);">
+          Vous etes passionné par l'informatique venez vous faire former par l'élite de la tech.
+        </p>
+        <div style="display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap;">
+          <a href="#work" class="btn-primary">Voir les cours</a>
+          <a href="#projects" class="btn-secondary">Découvrir les projets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COURS -->
+    <section id="work" class="panel">
+      <div class="container">
+        <h2>📚 Mes Formations</h2>
+        <p style="color: var(--muted); margin-bottom: 30px;">
+          Des cours pratiques pour apprendre les fondamenteaux de l'informatique bureautique.
+        </p>
+        <div class="image-grid">
+          <div class="course-card">
+            <img src="assets/images/1.jpg" alt="HTML CSS">
+            <div class="course-info">
+              <h3>WORD</h3>
+              <p>Maîtrisez les techniques de redactions</p>
+              <span class="badge">fondamenteaux</span>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/images/2.jpg" alt="JavaScript">
+            <div class="course-info">
+              <h3>EXCEL</h3>
+              <p>Comment tracer des tableaux et des graphiques</p>
+              <span class="badge">fondamenteaux</span>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/images/3.jpg" alt="Python">
+            <div class="course-info">
+              <h3>POWERPOINT</h3>
+              <p>Maitrisez toutes les techniques de création de powerpoint pour vos présentations.</p>
+              <span class="badge">fondamenteaux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section id="projects" class="panel">
+      <div class="container">
+        <h2>🚀 Mes Projets</h2>
+        <p style="color: var(--muted); margin-bottom: 30px;">
+          Des réalisations concrètes pour mettre en pratique les compétences
+        </p>
+        <div class="projects-grid">
+          <!-- Projet 1 -->
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <i class="fas fa-globe" style="font-size: 48px; color: white;"></i>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Interactif</h3>
+              <p>Un site portfolio moderne avec animations et transitions fluides. Utilisation de HTML, CSS et JavaScript pur.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <i class="fas fa-shopping-cart" style="font-size: 48px; color: white;"></i>
+            </div>
+            <div class="project-content">
+              <h3>E-commerce App</h3>
+              <p>Application de boutique en ligne avec panier, recherche et filtrage. Développée avec React et Firebase.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <i class="fas fa-mobile-alt" style="font-size: 48px; color: white;"></i>
+            </div>
+            <div class="project-content">
+              <h3>Application Météo</h3>
+              <p>Application mobile responsive qui affiche la météo en temps réel. Utilisation de l'API OpenWeatherMap.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">JS</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4 -->
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+              <i class="fas fa-tasks" style="font-size: 48px; color: white;"></i>
+            </div>
+            <div class="project-content">
+              <h3>Gestionnaire de Tâches</h3>
+              <p>Application de gestion de tâches avec drag & drop, catégories et statistiques. Stack full-stack.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACTS -->
+    <section id="contact" class="panel">
+      <div class="container">
+        <h2>📫 Contactez-moi</h2>
+        <p style="color: var(--muted); margin-bottom: 30px;">
+          N'hésitez pas à me contacter pour toute question, collaboration ou projet
+        </p>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:isaacnewton0003@gmail.com">isaacnewton0003@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Téléphone</h4>
+                <a href="tel:+2250596370852">+225 05 96 37 08 52</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Localisation</h4>
+                <p>Abidjan, Côte d'Ivoire</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm" autocomplete="on">
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" maxlength="100" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" autocomplete="email" maxlength="254" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" maxlength="150">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" maxlength="5000" placeholder="Votre message..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Ton Pote L'Informaticien - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="src/main.js" defer></script>
+</body>
+</html>
